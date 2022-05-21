@@ -1,0 +1,582 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.banner-image {
+    background-image: url(../images/IMG_0800.jpg);
+    background-size: cover;
+}
+
+.navbar-brand {
+    color: #000;
+}
+
+.navbar-nav {
+    text-shadow: 2px 1.5px 2px black;
+    font-size: 30px;
+    
+}
+
+#pt {
+    font-size: 110px;
+    color: white;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Indie Flower', cursive;
+    position: relative; top: 270px; left: 550px;
+}
+
+body {
+    background-color: #778899;
+    min-height: 100vh;
+}
+
+/* Portfolio respon text */
+
+@media (max-width: 1616px) {
+    #pt {
+        font-size: 80px;
+        position: relative; left: 50px;
+    }
+  }
+
+  @media (max-width: 638px) {
+    #pt {
+        font-size: 60px;
+        position: relative; left: 20px; top: 120px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    #pt {
+        font-size: 40px;
+        position: relative; left: 10px; top: 120px;
+    }
+  }
+
+  /* End of Header */
+  /* Skills Section */
+
+.inner {
+    padding-top: 20px;
+    
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+    border-radius: 2px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    
+    font-size: 1.2rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before {
+    width: 35px;
+}
+
+.skill-box:hover .img {
+    transform: translateY(-10px);
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.skill-title:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3 {
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.skill-icon {
+    width: 70px;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 990px){
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+/* End of Skills */
+
+/* About me CSS */
+section {
+    background-color: #E0E0E0;
+}
+
+.about {
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img {
+    height: auto;
+    width: 420px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text .AM {
+    color: #778899;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: #778899;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span {
+    color: #990000;
+}
+
+.about-text p {
+    color: #1a0c0c;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    font-weight: 350;
+}
+
+button {
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover {
+    background: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    color: #000;
+}
+
+@media screen and (max-width: 990px){
+    .about {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about {
+        width: 100%;
+        height: 30%;
+    }
+    .about-text .AM {
+        font-size: 50px;
+    }
+}
+
+/* ASK SCOTTIE FOR HELP */
+@media screen and (max-width: 400px){
+    .about {
+        width: 40%;
+        height: 30%;
+    }
+}
+/* end of about */
+
+/* Recent Work */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.banner-container .banner {
+    background: rgb(0,0,0);
+    background: linear-gradient(306deg, rgba(0,0,0,1) 0%, rgba(58,197,241,1) 0%, rgba(73,218,227,1) 25%, rgba(201,35,35,1) 40%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 100%);
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+.banner-container .banner .shoe img{
+    width:80%;
+}
+
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+    color:black;
+    font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+    color:black;
+    font-size: 40px;
+}
+
+.banner-container .banner .content p{
+    color:black;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 30px;
+    background: #fff;
+    color:#d63031;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+.banner-container .banner .rogue-img{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
+}
+
+.banner-container .banner .rogue-img img{
+    width:100%;
+}
+
+@media (max-width:768px){
+    .banner-container .banner .rogue-img{
+        display: none;
+    }
+}
+ /* end of past work */
+
+ /* About Bitwise */
+.bw {
+    width: 100%;
+    height: 100vh;
+    background-color: #778899;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content2 img {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.content2 {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text h1 {
+    color: rgb(99, 43, 43);
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.text h5 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.text p {
+    color: #E0E0E0;
+    font-size: 22.5px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: rgb(99, 43, 43);
+    color: #000;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1180px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about .content2 img {
+        margin-bottom: 35px;
+    }
+    .text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
+
+/* End of Bitwise */
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #E0E0E0;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-icon, footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li, footer .menu li {
+    list-style: none;
+}
+
+footer .social-icon li a  {
+    font-size: 2rem;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #000;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url(/images/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100% 
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100% 
+    {
+        background-position-x: 1000px;
+    }
+}
