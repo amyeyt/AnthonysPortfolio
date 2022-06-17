@@ -143,7 +143,7 @@ body {
     transition: .5s;
 }
 
-.img {
+.img1 {
     width: 90px;
     height: 90px;
     position: relative;
@@ -155,7 +155,7 @@ body {
     transition: .5s;
 }
 
-.img:after {
+.img1:after {
     content: '';
     position: absolute;
     top: 0;
@@ -268,13 +268,22 @@ button:hover {
     .about {
         width: 100%;
         height: 40%;
+        margin-right: 20px;
     }
+    .abt-img {
+        margin-right: 10px;
+    }
+   
 }
 
-@media screen and (max-width: 600px){
-    .about {
-        width: 100%;
+@media screen and (max-width: 646px){
+    .about .abt-img {
+        width: 50%;
         height: 30%;
+        margin-right: 20px;
+    }
+    .abt-img {
+        margin-right: 10px;
     }
     .about-text .AM {
         font-size: 50px;
@@ -286,6 +295,24 @@ button:hover {
     .about {
         width: 40%;
         height: 30%;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .about {
+        width: 20%;
+        height: 20%;
+        margin-right: 30px;
+    }
+    .abt-img {
+        width: 5%;
+    }
+    .AM {
+        font-size: 10px;
+    }
+    .about-text {
+        font-size: 4px;
     }
 }
 /* end of about */
@@ -458,6 +485,37 @@ button {
     }
 }
 
+@media (max-width: 1286px) {
+    .bw  {
+        padding-top: 150px;
+       margin-bottom: 230px;
+    }
+}
+
+@media (max-width: 376px) {
+    .bw  {
+        padding-top: 150px;
+       margin-bottom: 270px;
+    }
+    .text h1 h5 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 299px) {
+    .bw  {
+        padding-top: 150px;
+       margin-bottom: 300px;
+    }
+    .text h1 h5 {
+        
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+    
 /* End of Bitwise */
 
 /* Footer */
@@ -580,3 +638,4 @@ footer .wave#wave4 {
         background-position-x: 1000px;
     }
 }
+/* End of Footer */
