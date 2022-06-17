@@ -639,3 +639,59 @@ footer .wave#wave4 {
     }
 }
 /* End of Footer */
+
+/* start of INTEREST PAGE */
+
+.main-image {
+    position: relative;
+    background: url('../images/CAR.jpg');
+    background-size: cover;
+    height: 1150px;
+    overflow: hidden;
+}
+
+.container1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #778899;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.container1 h1 {
+    margin: 0;
+    font-size: 70px;
+    color: white;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    color: white;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.buttom {
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.buttom:hover {
+    opacity: .6;
+    color: hotpink;
+}
