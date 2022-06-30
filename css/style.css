@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    outline: 0;
     box-sizing: border-box;
 }
 
@@ -191,25 +192,25 @@ body {
 }
 /* End of Skills */
 
-/* About me CSS */
+/* About Me CSS */
 section {
     background-color: #E0E0E0;
 }
-
+ 
 .about {
     width: 100%;
     padding: 78px 0px;
 }
-
+ 
 .about img {
     height: auto;
     width: 420px;
 }
-
+ 
 .about-text {
     width: 550px;
 }
-
+ 
 .main {
     width: 1130px;
     max-width: 95%;
@@ -218,14 +219,14 @@ section {
     align-items: center;
     justify-content: space-around;
 }
-
+ 
 .about-text .AM {
     color: #778899;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-
+ 
 .about-text h5 {
     color: #778899;
     font-size: 25px;
@@ -233,11 +234,11 @@ section {
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
-
+ 
 span {
     color: #990000;
 }
-
+ 
 .about-text p {
     color: #1a0c0c;
     letter-spacing: 1px;
@@ -246,7 +247,7 @@ span {
     margin-bottom: 45px;
     font-weight: 350;
 }
-
+ 
 button {
     background: #000;
     color: white;
@@ -263,7 +264,7 @@ button:hover {
     cursor: pointer;
     color: #000;
 }
-
+ 
 @media screen and (max-width: 990px){
     .about {
         width: 100%;
@@ -275,7 +276,7 @@ button:hover {
     }
    
 }
-
+ 
 @media screen and (max-width: 646px){
     .about .abt-img {
         width: 50%;
@@ -289,7 +290,7 @@ button:hover {
         font-size: 50px;
     }
 }
-
+ 
 /* ASK SCOTTIE FOR HELP */
 @media screen and (max-width: 400px){
     .about {
@@ -298,7 +299,7 @@ button:hover {
         margin-right: 20px;
     }
 }
-
+ 
 @media screen and (max-width: 300px){
     .about {
         width: 20%;
@@ -312,10 +313,11 @@ button:hover {
         font-size: 10px;
     }
     .about-text {
-        font-size: 4px;
+        font-size: 1px;
     }
 }
 /* end of about */
+
 
 /* Recent Work */
 .banner-container {
